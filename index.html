@@ -1,0 +1,619 @@
+<!Doctype html>
+<html lang="es"> 
+	<head>
+	<meta charset= "utf-8">
+        <title>SGA-Química</title>
+        <link rel="icon" type="image/png" href="https://media.giphy.com/media/jTfmBts5vvjK651km0/giphy.gif">
+        <style>
+            body{
+                background-color: rgb(250, 250, 250);
+                font-size: 20px;
+                font-family: "Helvetica", sans-serif;
+                line-height: 1.7em;
+            }
+            h1{
+                background-color: rgb(0, 26, 38);
+                color: rgb(201, 245, 236);
+                font-size: 3em;
+                text-align: center;
+                margin: -10px -8px 10px -8px;
+                padding: 110px 0px 80px 0px;
+            }
+            h2{
+                color: #0B1629;
+            }
+            h3{
+                color: #01324B;
+            }
+            footer{
+                clear: both;
+                background-color: rgb(0, 26, 38);
+                text-align: center;
+                margin: 200px -8px -100px -8px;
+                padding: 2px 0px 2px 0px;
+                color: rgb(201, 245, 236);
+                font-size: 14px
+            }
+            /*imagenes de estilo*/
+            #peligro{
+                width: 7%;
+                position:absolute;
+                top: 10%;
+                left: 14%;
+            }
+            #toxico{
+                width: 9%;
+                position:absolute;
+                top: 5%;
+                right: 14%;
+            }
+            #hopper{
+                width: 7%;
+                position: fixed;
+                bottom: 5%;
+                right: 1.5%;
+            }
+            /*Estilo de links*/
+            a:link{
+                color:darkcyan;
+            }
+            a:visited{
+                color:darkorchid;
+            }
+            a:hover, a:active, a:focus{
+                color:cornflowerblue;
+            }
+            /*Generalidades de estilo*/
+            .texto-pequeno{
+                font-family: monospace;
+                font-size: 0.7em;
+                line-height: 1.4em;
+            }
+            .texto{
+                margin: 30px 10% 30px 10%;
+                padding: 5px;
+                text-align: justify;
+            }
+            .img-media{
+                width: 200px;
+                float: left;
+                margin: 30px 20px 20px 0px;
+                padding: 10px;
+            }
+            .infografia{
+                width: 32%;
+            }
+                /*sección grande gris*/
+            .divisor1{ 
+                background-color: rgb(230, 230, 230);
+                margin:50px -8px 40px -11px;
+                padding: 9px 0px 30px 0px;
+                clear: both;
+                line-height: 1.25em;
+            }
+                /*cada uno de los temas*/
+            .divisor-med{
+                background-color: rgb(245, 245, 245);
+                color: #353535;
+                font-size: 15.5px;
+                margin: 15px 16% 0px 16%;
+                padding: 10px 40px 10px 40px;
+                border: 3px solid rgb(240, 240, 240);
+                font-family: "helvetica", sans-serif;
+            }
+                /*características de los temas*/
+            .divisor-interior{
+                margin: 0px 20px 0px 30%;
+                padding: 10px 0px 0px 10px;
+                text-align: justify; 
+            }
+            .divisor-interior ul{
+                margin-left: -25px;
+            }
+            /*estiliza los títulos de los temas*/
+            .divisor1 span{
+                color: #0380AF;
+                font-size: 1.3em;
+                font-family: cursive;
+            }
+            .divisor1 span:hover,.divisor1 span:active,.divisor1 span:focus{
+                color: #0B698D;
+                font-weight: bold;
+            }
+            /*Cuadro de ejemplos*/
+            .cuadro-izq{
+                text-align: center;
+                float: left;
+                width: 22%;
+                padding: 0px 15px 3px 15px;
+                border: 1px dotted rgb(168, 161, 168);
+                clear:both;
+            }
+            .cuadro-izq img{
+                height: 90px;
+                margin: 15px 0px -18px 0px;
+            }
+            #tema1{
+                margin: -100px 0px 10px 0px;
+            }
+            #tema2{
+                margin: -50px 0px 10px 0px;
+                padding: 0px 15px 0px 15px;
+            }
+            #tema3{
+                margin: -200px 0px 10px 0px;
+                padding: 0px 15px 0px 15px;
+            }
+            .ejem p{
+                text-align: left;
+            }
+            #tema5{
+                margin: -40px 0px 10px 0px;
+            }
+            #tema6{
+                margin: -25px 0px 10px 0px;
+                padding: 0px 15px 10px 15px;
+            }
+            #tema6 p{
+                margin: 0px;
+            }
+            #tema8{
+                margin: -15px 0px -18px 0px;
+            }
+            #tema9{
+                margin: -80px 0px -18px 0px;
+            }
+            /*créditos*/
+            .credito-L{
+                float:left;
+                width: 38%;
+                margin: 0px 0px 0px 5%;
+                padding-right: 50px;
+                border-right: 1px dotted rgb(168, 161, 168);
+            }
+
+        </style>
+	</head>
+    <body>
+        <!--Título-->
+        <h1>Símbolos de peligrosidad</h1>
+        <!--Imágenes de adorno-->
+        <img id="peligro" src=https://media.giphy.com/media/jTfmBts5vvjK651km0/giphy.gif alt="Gif de peligro">
+        <img id="toxico" src="https://media.giphy.com/media/ZFoHw7Co9RGtirUdCz/giphy.gif" alt="Gif de sustancia tóxica">
+        <img id="hopper" src="https://www.kasandbox.org/programming-images/creatures/Hopper-Happy.png" alt="hopper saltarín dando una bienvenida">
+        <!--Texto introductorio-->
+        <div class="texto">
+            <p class="texto-pequeno">Yennifer María de León Samuc <br>
+            UVG-ITEC Quinto Bachillerato Sección B<br>
+            Química, 17 de Febrero del 2021</p>
+            <p>El sistema Globalmente Armonizado de Clalsificación y Etiquetado de productos químicos (SGA o GHS por sus siglas en inglés) establece criterios armonados para clasificar sustancias y mezclas con respecto a sus peligros físicos, para la salud y para el medio ambiente. Estos se conocen como pictogramas de peligro.</p>
+        </div>
+        <!--Divisor de contenidos general-->
+        <div class="divisor1">
+        <h2 class="texto">Los pictogramas de peligro son:</h2>
+                    <!--Tema 1-->
+        <details class="divisor-med">
+            <summary><span> 1. Peligro para la Salud</span></summary>
+                <img class="img-media" src="https://upload.wikimedia.org/wikipedia/commons/2/21/GHS-pictogram-silhouette.svg" alt="Peligro para la salud"> 
+                
+            <div class=divisor-interior>
+                <h3>Descripción del Símbolo</h3>
+                <p>El símbolo se reconoce como peligro para la salud, se puede ver a un ser humano “agravado”.</p>
+            </div>
+            <div class="divisor-interior">
+                <h3>Significado:</h3>
+                <ul>
+                    <li>Puede ser mortal en caso de ingestión y penetración en las vías respiratorias</li>
+                    <li>Puede perjudicar o perjudica a determinados órganos.</li>
+                    <li>Se sospecha o puede perjudicar la fertilidad o al feto.</li>
+                    <li>Se sospecha o puede provocar cáncer.</li>
+                    <li>Se sospecha o puede provocar defectos genéticos</li>
+                    <li>Puede provocar síntomas de alergia o asma o dificultades respiratorias en caso de inhalación</li>
+                </ul>
+            </div>
+                    <!--EJEMPLOS-->
+            <div id="tema1" class="cuadro-izq">
+                <h4>Ejemplos de donde se puede encontrar:</h4>
+                <img src="https://www.restauro-online.com/WebRoot/Store6/Shops/63807438/50C3/BEDB/C223/4EAE/2BDB/C0A8/28BC/C607/221-0001_Essenza_di_trementina_1_Lt_m.JPG" alt="Trementina"> 
+                <p>>Trementina</p>
+                <img src="https://images.pexels.com/photos/9796/car-refill-transportation-transport.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Gasolina"> 
+                <p>>Gasolina</p>
+                <img src="https://media.istockphoto.com/photos/verser-de-leau-de-javel-picture-id1125394172?s=612x612" alt="cloro"> 
+                <p>>Cloro</p>
+            </div>  
+            <!--contenido-->
+            <div class="divisor-interior">
+                <h3>Precauciones</h3>
+                <ul>
+                    <li>Guardar bajo llave</li>
+                    <li>No respirar el polvo, humo, gas, niebla, vapores o el aerosol.</li>
+                    <li>Lavarse concienzudamente tras la manipulación.</li>
+                    <li>No comer, beber ni fumar durante su utilización.</li>
+                    <li>No manipular la sustancia sin antes de haber leído y comprendido todas las instrucciones de seguridad.</li>
+                    <li>Solicitar instrucciones especiales antes del uso.</li>
+                    <li>Utilizar el equipo de protección individual obligatorio.</li>
+                    <li>En caso de ventilación insuficiente, llevar equipo de protección respiratoria.</li>
+                </ul>
+                <ul>
+                    <li><strong>En caso de ingestión:</strong> llamar inmediatamente a un CENTRO de información toxicológica o a un médico NO provocar el vómito.</li>
+                    <li><strong>En caso de malestar:</strong> Consultar a un médico</li>
+                    <li><strong>En caso de exposición:</strong> llamar a un CENTRO de información toxicológica o a un médico.</li>
+                    
+                    <li><strong>En caso de exposición manifiesta o presunta:</strong> Consultar a un médico</li>
+                    <li><strong>En caso de inhalación:</strong> si respira con dificultad, transportar a la víctima al exterior y mantenerla en reposo, en una posición en la que pueda respirar confortablemente.</li>
+                </ul>
+            </div>
+        </details>
+            
+                    <!--Tema 2-->
+        <details class="divisor-med">
+            <summary><span> 2. Toxicidad Aguda</span></summary>
+                <img class="img-media" src="https://upload.wikimedia.org/wikipedia/commons/5/58/GHS-pictogram-skull.svg" alt="toxicidad aguda"> 
+                
+            <div class=divisor-interior>
+                <h3>Descripción del Símbolo</h3>
+                <p>El símbolo muestra una calavera y tibias cruzada que hace referencia a una persona muerta.</p>
+            </div>
+            <div class="divisor-interior">
+                <h3>Significado:</h3>
+                <ul>
+                    <li>Mortal/tóxico en caso de indigestión.</li>
+                    <li>Mortal/tóxico en caso de contacto con la piel.</li>
+                    <li>Mortal/tóxico en caso de inhalación.</li>
+                </ul>
+            </div>
+                    <!--EJEMPLOS-->
+            <div id="tema2" class="cuadro-izq">
+                <h4>Ejemplos de donde se puede encontrar:</h4>
+                <img src="https://media.istockphoto.com/photos/methanol-or-methyl-alcohol-in-clear-glass-picture-id1200662155?s=612x612" alt="Metanol">
+                <p>>Metanol</p>
+                <img src="https://media.istockphoto.com/photos/aerosol-for-insect-control-in-the-hands-of-a-woman-wearing-a-mask-picture-id1013545842?s=612x612" alt="Plaguicidas"> 
+                <p>>Plaguicidas</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Applying_molluscicide.jpg" alt="Biocida"> 
+                <p>>Biocidas</p>
+            </div>  
+            <!--contenido-->
+            <div class="divisor-interior">
+                <h3>Precauciones</h3>
+                <ul>
+                    <li>Guardar bajo llave.</li>
+                    <li>Almacenar en un recipiente cerrado.</li>
+                    <li>Llevar equipo de protección respiratoria al manipularlo.</li>
+                    <li>Utilizar únicamente en exteriores o en un lugar bien ventilado.</li>
+                    <li>No comer, beber ni fumar durante su utilización.</li>
+                    <li>Lavarse concienzudamente tras la manipulación.</li>
+                    <li>Evitar el contacto con los ojos, la piel o la ropa.</li>
+                    <li>No respirar el polvo/el humo/el gas/la niebla/los vapores/el aerosol.</li>
+                    <li>Lavar las prendas contaminadas antes de volverlas a utilizar.</li>
+                    <li>Llevar guantes/prendas/gafas/máscara de protección.</li>
+                </ul>
+                <ul>
+                    <li><strong>En caso de ingestión:</strong> llamar inmediatamente a un CENTRO de información toxicológica o a un médico. Enjuagarse la boca.</li>
+                    <li><strong>En caso de contacto con la piel: </strong>lavar suavemente con agua y jabón abundantes. Quitarse inmediatamente las prendas contaminadas.</li>
+                    <li><strong>En caso de inhalación:</strong> transportar a la víctima al exterior y mantenerla en reposo, en una posición reconfortable para respirar.</li>
+                </ul>
+            </div>
+        </details>
+
+                    <!--Tema 3-->
+        <details class="divisor-med">
+            <summary><span> 3. Símbolo de Exclamación</span></summary>
+                <img class="img-media" src="https://upload.wikimedia.org/wikipedia/commons/c/c3/GHS-pictogram-exclam.svg" alt="Peligro para la salud (!)">
+                
+            <div class=divisor-interior>
+                <h3>Descripción del Símbolo</h3>
+                <p>Es un símbolo de exclamación cerrando la oración. Se puede interpretar como un aviso de peligro para la salud o irritación cutánea, en todo caso, un indicador de que no se tenga contacto con el mismo.</p>
+            </div>
+            <div class="divisor-interior">
+                <h3>Significado:</h3>
+                <ul>
+                    <li>Puede irritar las vías respiratorias.</li>
+                    <li>Puede provocar somnolencia o vértigo</li>
+                    <li>Puede provocar una reacción alérgica en la piel.</li>
+                    <li>Provoca irritación ocular grave.</li>
+                    <li>Provoca irritación cutánea.</li>
+                    <li>Nocivo en caso de ingestión / contacto con la piel / inhalación.</li>
+                    <li>Nocivo para la salud pública y el medio ambiente por destruir el ozono estratosférico. </li>
+                </ul>
+            </div>
+                    <!--EJEMPLOS-->
+            <div id="tema3" class="cuadro-izq">
+                <h4>Ejemplos de donde se puede encontrar:</h4>
+                <img src="https://media.istockphoto.com/photos/selective-focus-of-ammonia-solution-or-ammonium-hydroxide-in-glass-picture-id1272820709?s=612x612" alt="Amoniaco"> 
+                <p>>Amoniaco</p>
+                <img src="https://images.pexels.com/photos/5591581/pexels-photo-5591581.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Detergente para lavadora"> 
+                <p>>Detergentes para lavadoras</p>
+                <img src="https://images.pexels.com/photos/4239130/pexels-photo-4239130.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Líquido limpiador">
+                <p>>Líquidos limpiadores</p>
+            </div>  
+            <!--contenido-->
+            <div class="divisor-interior">
+                <h3>Precauciones</h3>
+                <ul>
+                    <li>Utilizar únicamente en exteriores o en un lugar bien ventilado.</li>
+                    <li>Llevar guantes/prendas/gafas/máscara de protección.</li>
+                    <li>No comer, beber ni fumar durante su utilización.</li>
+                </ul>
+                <ul>
+                    <li><strong>En caso de ingestión:</strong>llamar a un CENTRO de información toxicológica o a un médico en caso de malestar.</li>
+                    <li><strong>En caso de contacto con la piel:</strong> Lavar con agua y jabón abundantes.</li>
+                    <li><strong>En caso de contacto con los ojos:</strong> Aclarar cuidadosamente con agua durante varios minutos. Quitar las lentes de contacto, si lleva y resulta fácil. Seguir aclarando.</li>
+                    <li><strong>En caso de inhalación:</strong> Transportar a la víctima al exterior y mantenerla en reposo en una posición confortable para respirar.</li>
+                </ul>
+            </div>
+        </details>
+
+                    <!--Tema 4-->
+        <details class="divisor-med">
+            <summary><span> 4. Llama / Inflamable</span></summary>
+                <img class="img-media" src="https://upload.wikimedia.org/wikipedia/commons/6/6d/GHS-pictogram-flamme.svg" alt="Llama/Inflamable"> 
+                
+            <div class=divisor-interior>
+                <h3>Descripción del Símbolo</h3>
+                <p>Se puede visualizar llamas, que hace referencia a su nombre de ser un producto altamente inflamable.</p>
+            </div>
+            <div class="divisor-interior">
+                <h3>Significado:</h3>
+                <ul>
+                    <li>Gas inflamable/extremadamente inflamable.</li>
+                    <li>Aerosol inflamable/altamente inflamable.</li>
+                    <li>Líquido y vapores (muy) inflamables.</li>
+                    <li>Sólidos inflamables.</li>
+                </ul>
+            </div> 
+                    <!--EJEMPLOS-->
+            <div class="cuadro-izq ejem">
+                <h4>Ejemplos de donde se puede encontrar:</h4>
+                <p>>Aceite para lámparas</p>
+                <p>>Quitaesmaltes</p>
+                <p>>Gasolina</p>
+            </div>  
+            <!--contenido-->
+            <div class="divisor-interior">
+                <h3>Precauciones</h3>
+                <ul>
+                    <li>No pulverizar sobre una llama abierta u otra fuente de ignición.</li>
+                    <li>Mantener alejado de fuentes de calor, chispas, llama abierta o superficies calientes.</li>
+                    <li>No fumar cerca del mismo.</li>
+                    <li>Mantener el recipiente cerrado herméticamente</li>
+                    <li>Mantener en lugar fresco.</li>
+                    <li>Proteger de la luz del sol.</li>
+                </ul>
+            </div>
+        </details>
+            
+                    <!--Tema 5-->
+        <details class="divisor-med">
+            <summary><span> 5. Corrosivo</span></summary>
+                <img class="img-media" src="https://upload.wikimedia.org/wikipedia/commons/a/a1/GHS-pictogram-acid.svg" alt="simbolo de corrosivo"> 
+                
+            <div class=divisor-interior>
+                <h3>Descripción del Símbolo</h3>
+                <p>Se puede apreciar claramente ilustrado el significado de la corrosión: que es capaz de destruir metales y la piel humana (representado como una mano en el pictograma).</p>
+            </div>
+            <div class="divisor-interior">
+                <h3>Significado:</h3>
+                <ul>
+                    <li>Puede ser corrosivo para los metales</li>
+                    <li>Provoca quemaduras graves en la piel y lesiones oculares graves</li>
+                </ul>
+            </div>
+                    <!--EJEMPLOS-->
+            <div id="tema5" class="cuadro-izq ejem">
+                <h4>Ejemplos de donde se puede encontrar:</h4>
+                <p>>Desatascadores de tuberías</p>
+                <p>>ácido acético</p>
+                <p>>ácido hidroclorídrico</p>
+            </div>  
+            <!--contenido-->
+            <div class="divisor-interior">
+                <h3>Precauciones</h3>
+                <ul>
+                    <li>Guardar bajo llave</li>
+                    <li>Conservar únicamente en el recipiente original.</li>
+                    <li>No respirar el polvo/el humo/el gas/la niebla/los vapores/el aerosol.</li>
+                    <li>Evitar el contacto con la piel, ojos y ropa.</li>
+                    <li>Llevar guantes/prendas/gafas/máscara de protección</li>
+                    <li>Lavarse concienzudamente tras la manipulación</li>                 
+                </ul>
+
+            </div>
+        </details>
+            
+                    <!--Tema 6-->
+        <details class="divisor-med">
+            <summary><span> 6. Bombona de Gas</span></summary>
+                <img class="img-media" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/GHS-pictogram-bottle.svg" alt="pictograma de bombona de gas"> 
+                
+            <div class=divisor-interior>
+                <h3>Descripción del Símbolo</h3>
+                <p>En el símbolo se muestra una bombona de gas a presión.</p>
+            </div>
+            <div class="divisor-interior">
+                <h3>Significado:</h3>
+                <ul>
+                    <li>Contiene gas a presión / gas refrigerado.</li>
+                    <li>peligro de explosión en caso de calentamiento.</li>
+                    <li>puede provocar quemaduras o lesiones criogénicas.</li>
+                </ul>
+            </div>
+                    <!--EJEMPLOS-->
+            <div id="tema6" class="cuadro-izq ejem">
+                <h4>Ejemplos de donde se puede encontrar:</h4>
+                <p>>Botellas de gas a presión</p>
+                <p>>Insecticidas caseros</p>
+                <p>>Ambientadores caseros</p>
+            </div>  
+            <!--contenido-->
+            <div class="divisor-interior">
+                <h3>Precauciones</h3>
+                <ul>
+                    <li>Proteger de la luz del sol</li>
+                    <li>Llevar guantes/gafas/máscara que aíslen del frío.</li>
+                    <li>Nunca lanzarlas al fuego.</li>
+                </ul>
+            </div>
+        </details>
+            
+                    <!--Tema 7-->
+        <details class="divisor-med">
+            <summary><span> 7. Explosivo</span></summary>
+                <img class="img-media" src="https://upload.wikimedia.org/wikipedia/commons/4/4a/GHS-pictogram-explos.svg" alt="Pictograma de explosivo"> 
+                
+            <div class=divisor-interior>
+                <h3>Descripción del Símbolo</h3>
+                <p>En el pictograma se muestra una bomba explotando.</p>
+            </div>
+            <div class="divisor-interior">
+                <h3>Significado:</h3>
+                <ul>
+                    <li>Explosivo inestable.</li>
+                    <li>Explosivo, peligro de explosión en masa (aún mas en caso de incendio).</li>
+                    <li>Explosivo, grave peligro de proyección.</li>
+                    <li>Explosivo, peligro de incendio, de onda expansiva o de proyección.</li>
+                </ul>
+            </div>
+                    <!--EJEMPLOS-->
+            <div class="cuadro-izq ejem">
+                <h4>Ejemplos de donde se puede encontrar:</h4>
+                <p>>Fuegos Artificiales (pirotécnicos).</p>
+                <p>>Munición.</p>
+                <p>>Flúor</p>
+            </div>  
+            <!--contenido-->
+            <div class="divisor-interior">
+                <h3>Precauciones</h3>
+                <ul>
+                    <li>Mantener alejado de fuentes de calor, chispas, llama abierta o superficies calientes.</li>
+                    <li>No manipular la sustancia antes de haber leído y comprendido todas las instrucciones de seguridad.</li>
+                    <li>Solicitar instrucciones especiales antes del uso.</li>
+                    <li>No fumar cerca del mismo, ni mucho menos durante su uso.</li>
+                    <li>Utilizar el equipo de protección individual obligatorio.</li>
+                    <li>Llevar guantes/prendas/gafas/máscara de protección al usarlo.</li>
+                </ul>
+            </div>
+        </details>
+            
+                    <!--Tema 8-->
+        <details class="divisor-med">
+            <summary><span> 8. Comburente</span></summary>
+                <img class="img-media" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/GHS-pictogram-rondflam.svg/600px-GHS-pictogram-rondflam.svg.png" alt="pictograma: comburente"> 
+                
+            <div class=divisor-interior>
+                <h3>Descripción del Símbolo</h3>
+                <p>Se puede apreciar una llama sobre un círculo, que representa a un comburente.</p>
+            </div>
+            <div class="divisor-interior">
+                <h3>Significado:</h3>
+                <ul>
+                    <li>Puede provocar o agravar un incendio; comburente.</li>
+                    <li>Puede provocar un incendio o una explosión; muy comburente.</li>
+                </ul>
+            </div>
+                    <!--EJEMPLOS-->
+            <div id="tema8" class="cuadro-izq ejem">
+                <h4>Ejemplos de donde se puede encontrar:</h4>
+                <p>>Oxígeno de uso médico</p>
+                <p>>Nitrato de potacio</p>
+                <p>>Perióxido de hidrógeno</p>
+            </div>  
+            <!--contenido-->
+            <div class="divisor-interior">
+                <h3>Precauciones</h3>
+                <ul>
+                    <li>Mantener alejado de fuentes de calor, chispas, llama abierta o superficies calientes.</li>
+                    <li>Llevar guantes/prendas/gafas/máscara de protección al usarlo.</li>
+                    <li>No fumar durante su uso.</li>
+                    <li>Aclarar inmediatamente con agua abundante las prendas y la piel contaminadas antes de quitarse la ropa.</li>
+                </ul>
+            </div>
+        </details>
+            
+                    <!--Tema 9-->
+        <details class="divisor-med">
+            <summary><span> 9. Peligroso para el medio ambiente</span></summary>
+                <img class="img-media" src="https://upload.wikimedia.org/wikipedia/commons/b/b9/GHS-pictogram-pollu.svg" alt="peligroso para el medio ambiente"> 
+                
+            <div class=divisor-interior>
+                <h3>Descripción del Símbolo</h3>
+                <p>En el pictograma se puede apreciar un ecosistema (tanto terrestre, el árbol sin hojas; como acuático, un pez muerto) seriamente dañanado por la contaminación.</p>
+            </div>
+            <div class="divisor-interior">
+                <h3>Significado:</h3>
+                <ul>
+                    <li>El contacto de esa sustancia con el medio ambiente puede provocar daños al ecosistema a corto o largo plazo.</li>
+                    <li>Muy tóxico/tóxico para los organismos acuáticos con efectos nocivos duraderos.</li>
+                </ul>
+            </div>
+                    <!--EJEMPLOS-->
+            <div id="tema9" class="cuadro-izq ejem">
+                <h4>Ejemplos de donde se puede encontrar:</h4>
+                <p>>Gasolina</p>
+                <p>>Cianuro de Potasio</p>
+                <p>>Lindano</p>
+            </div>  
+            <!--contenido-->
+            <div class="divisor-interior">
+                <h3>Precauciones</h3>
+                <ul>
+                    <li>Evitar su liberación al medio ambiente.</li>
+                    <li>no debe ser liberado en las cañerías o en el suelo.</li>
+                    <li>Recoger lo vertido.</li>
+                </ul>
+
+            </div>
+        </details>
+        </div>
+        <!--Apartado de infografías-->
+        <div class="texto">
+            <h2>Infografías:</h2>
+            <a target="_blank" href="https://imgur.com/PHNc581"><img class="infografia" src="https://i.imgur.com/PHNc581.png" alt="infografía 1: los primeros tres signos de peligrosidad"></a>
+            <a target="_blank" href="https://imgur.com/wpFZ22A"><img class="infografia" src="https://i.imgur.com/wpFZ22A.png" alt="infografía 1: 4-6 signos de peligrosidad"></a>
+            <a target="_blank" href="https://imgur.com/P2a5OSD"><img class="infografia" src="https://i.imgur.com/P2a5OSD.png" alt="infografía 1: los últimos tres signos de peligrosidad"></a>
+        </div>
+        <!--Cuadro PNI-->
+        <div class="divisor1">
+            <h2 class="texto" style="text-align: center; line-height: 1.3em">La importancia de conocer los símbolos de peligrosidad dentro de un laboratorio</h2>
+            <div style="position: relative; width: 66%; height: 0; padding-top: 37.1%;
+ padding-bottom: 48px; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin: 1.6em 10% 1.6em 17%; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAEWC_VQpbA&#x2F;view?embed">
+  </iframe>
+</div>
+            
+            
+            
+            
+        </div>
+        <!--créditos-->
+        <div class="texto">
+            <div class="texto-pequeno credito-L">
+                <h2>Créditos</h2>
+                <h3>Contenido extraído de:</h3>
+                <p><a target="_blank" href="https://echa.europa.eu/es/regulations/clp/clp-pictograms"> Echa: Pictogramas CLP</a><br>
+                <a target="_blank" href="https://es.wikipedia.org/wiki/S%C3%ADmbolo_de_riesgo_qu%C3%ADmico"> Wikipedia: Simbolo de riesgo químico</a></p>
+                <h3>Imágenes extraídas de:</h3>
+                <p><a target="_blank" href="https://www.pexels.com/es-es/">Pexels</a><br>
+                <a target="_blank" href="https://www.istockphoto.com/es"> Istockphoto</a><br>
+                <a target="_blank" href="https://giphy.com/"> Giphy</a><br>
+                <a target="_blank" href="https://www.restauro-online.com/trementina-pura-esencia-de-pino"> Restauro-Online: Venta de Tremedina</a></p>
+                <h3>Imágenes Propias</h3>
+                <p>Las infografías y El cuadro (PNI) fueron elaboración propia de la desarrolladora.<br>
+                <strong>Considere visitar: </strong><a target="_blank" href="https://imgur.com/user/CrazyQueen017/posts"> Imgur: Profile</a></p>
+            </div>
+            <div class="texto-pequeno" style="margin: 5% 0px 0px 55%;">
+                <h3>Sobre la desarrolladora:</h3>
+                <p><strong>Nombre:</strong> <a target="_blank" href="https://github.com/Yennifer017"> Yennifer María de León Samuc</a><br>
+                <strong>Institución: </strong><a target="_blank" href="https://www.uvg.edu.gt/">UVG Altiplano - Instituto tecnológico</a><br>
+                <strong>Grado y Sección:</strong> Quinto Bachillerato B<br>
+                <strong>Curso:</strong> Química<br>
+                <strong>Facilitadora:</strong> Inga. Patricia Javier<br>
+                <strong>Fecha de publicación: </strong> 17 de Marzo del 2021</p>
+        </div>
+        </div>
+        <footer>
+            <p><em>YdL: Everything is connected...</em></p>
+        </footer>
+    </body>
+</html>
